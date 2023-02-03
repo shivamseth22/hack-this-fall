@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+.main::before{
+    contain:'';
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.section{
+    height: 400px;
+    width: 500px;
+    background-color: grey;
+    
+}
+.m-h1{
+    text-align: center;
+    margin-top: 100px;
+    z-index: 0;
+}
+.section .input{
+    height: 50px;
+    width: 400px;
+    margin: 30px 50px 0px 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+.section .btn{
+    margin: 26px 0px 0px 200px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
